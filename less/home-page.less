@@ -2,16 +2,50 @@
 
 .home {
 
+
   .intro {
+
+    .margin-top();
+
+    @media @mobile {
+      img {
+        .mobile-width(500px);
+      }
+    }
+
+    .heading {
+      background-color: @header-background;
+      padding-top: 2rem;
+
+      @media @mobile {
+        .heading {
+          margin: 0 auto;
+
+
+        }
+      }
+
+
+      h1 {
+        .heading(center, @header-font-size);
+      }
+
+      .navbar {
+        .heading(center, 2rem);
+        .margin-top();
+        .heading-padding-bottom();
+
+      }
+    }
 
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
+
   }
 
   .space-images {
@@ -19,11 +53,29 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @media @mobile {
+
+      .sky,
+      .launch {
+        display: none;
+      }
+
+      .blast {
+        margin: 0 auto;
+        width: 300px;
+        .margin-top();
+      }
+
+    }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+
+
     }
   }
 
@@ -46,11 +98,22 @@
     display: flex;
     justify-content: center;
 
+    @media @mobile {
+      width: 500px;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
     .walk-text {
       width: 50%;
 
       h3 {
+
         margin-bottom: 10px;
+
+        @media @mobile {
+          .margin-top();
+        }
       }
 
       p {
@@ -58,13 +121,35 @@
       }
 
       .btn {
+        .button(10px 40px, @ebony-clay, 10px, @sea-shell, pointer, 200px, center, 2.2rem);
+
+        &:hover {
+
+          background-color: darken(teal, 5%);
+          color: lighten(@waterloo, 10%);
+        }
+
+        @media @mobile {
+          .mobile-width(300px);
+        }
+
       }
+
+      @media @mobile {
+        .mobile-width();
+      }
+
     }
+
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
+      @media @mobile {
+        .mobile-width();
+      }
+
       img {
         width: 100%;
         height: auto;
@@ -72,4 +157,7 @@
       }
     }
   }
-}// home
+}
+
+
+// home
