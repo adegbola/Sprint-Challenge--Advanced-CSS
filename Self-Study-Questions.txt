@@ -1,0 +1,11 @@
+﻿1.	Adaptive design focuses on the need of the user and uses a progressive enhancement technique to design the web pages. Adaptive web design adapts itself to fit into various screen resolutions. 
+	Adaptive web design relies on predefined screen sizes to adapt itself to resolutions across devices. 
+	Responsive website design is the most suitable type of web design style and the most popular in today’s time. It provides precise viewing experience of a website to the user, adapting to all screens across devices.
+
+2.      Mobile first implies you will design and code for a mobile device first and expand layout or features as you gain more screen space toward desktop.
+
+3.     	Using 62.5% as the base value because then you can convert rem units by the power of 10 instead of 16. 62.5 * .16 = 10. That means 1rem would equate to 10px throughout the document.
+
+4.    	Preprocessing is simply a more robust syntax for CSS written in a different language. That language is then compiled into normal CSS.
+
+5.   	Mixins and nesting is my favorite.
